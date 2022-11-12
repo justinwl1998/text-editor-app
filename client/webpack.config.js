@@ -32,10 +32,11 @@ module.exports = () => {
         name: 'Just Another Text Editor',
         short_name: 'JATE',
         description: 'Just another text editor out on the internet.',
-        background_color: '#ffffff',
-        theme: '#ffffff',
+        background_color: '#225ca3',
+        theme: '#225ca3',
         start_url: './',
         publicPath: './',
+        id: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -43,6 +44,7 @@ module.exports = () => {
             destination: path.join('assets', 'icons')
           },
         ],
+        fingerprints: false,
        })
     ],
 
