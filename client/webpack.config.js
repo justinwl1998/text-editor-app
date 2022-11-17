@@ -22,6 +22,7 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Just Another Text Editor',
+        favicon: './favicon.ico'
        }),
        new InjectManifest({
         swSrc: './src-sw.js',
@@ -42,7 +43,7 @@ module.exports = () => {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
             destination: path.join('assets', 'icons')
-          },
+          }
         ],
         fingerprints: false,
        })
@@ -63,7 +64,7 @@ module.exports = () => {
               presets: ['@babel/preset-env'],
             },
           },           
-        }
+        },
       ],
     },
   };
